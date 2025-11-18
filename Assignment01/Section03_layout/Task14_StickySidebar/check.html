@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: self-start;
+            visibility: hidden;
+        }
+        .sect1{
+            width: 10px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: self-start;
+            background-color: aqua;
+            transition: all 1ms;
+        }
+        .sect1:hover{
+                width: 100px;
+                ul{
+                    visibility: visible;
+                    
+                    :hover{
+                        scale: 1.25;
+                    }
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="sect1">
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+            <li>Link 5</li>
+        </ul>
+    </div>
+</body>
+</html>

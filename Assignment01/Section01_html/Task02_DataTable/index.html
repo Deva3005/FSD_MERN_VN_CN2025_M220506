@@ -1,0 +1,102 @@
+<!-- Question 2: Build a data table that displays information about 5 different products with 
+columns for Product Name, Category, Price, Stock Status, and Actions. Include proper table 
+headers.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTable...</title>
+    <style>
+        *{
+            /* border:1px solid black; */
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            font-weight: bolder;
+            color: white;
+            background-color: black;
+            padding:5px;
+            border-bottom: 5px solid blue;
+        }
+        tr:nth-child(2n){
+            background-color: rgb(185, 223, 247);
+        }
+        td{
+            border: 1px solid black;
+            padding:5px;
+        }
+        table>caption{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        tr>td:first-child{
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            border-right: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h1>!!! Sales !!!</h1></caption>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock Status</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>iPhone 16</td>
+            <td>Mobile</td>
+            <td>$ 69,999/-</td>
+            <td>Available</td>
+            <td><button>Click To Ship</button></td>
+        </tr>
+        <tr>
+            <td>iPhone 16</td>
+            <td>Mobile</td>
+            <td>$ 69,999/-</td>
+            <td>Available</td>
+            <td><button>Click To Ship</button></td>
+        </tr>
+        <tr>
+            <td>Red Magic Pro</td>
+            <td>Mobile</td>
+            <td>$ 89,999/-</td>
+            <td>10 Pcs Remains</td>
+            <td><button>Click To Ship</button></td>
+        </tr>
+        <tr>
+            <td>Sony PS5</td>
+            <td>Gamming Console</td>
+            <td>$ 59,999/-</td>
+            <td>Available</td>
+            <td><button>Click To Ship</button></td>
+        </tr>
+        <tr>
+            <td>Asus ROG Ally</td>
+            <td>Gamming Handheld</td>
+            <td>$ 1,29,999/-</td>
+            <td>Available</td>
+            <td><button>Click To Ship</button></td>
+        </tr>
+    </table>
+
+</body>
+</html>

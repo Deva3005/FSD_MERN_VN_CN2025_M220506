@@ -1,0 +1,92 @@
+<!-- Question 17: Create a photo gallery using CSS Flexbox with 6 images. The gallery should: 
+• Display 3 images per row on desktop 
+• Center the images horizontally and vertically within their containers 
+• Have equal spacing between images 
+• Include links on images and it should navigate to Wikipedia where the information 
+shall be available -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    .cont{
+        background-color: gray;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    div.image_card{
+        background-color: aquamarine;
+        width: 350px;
+        height: 350px;
+        border: 5px outset black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        img{
+            margin:10px;
+            width: 200px;
+            object-fit: contain;
+        }
+        h3{
+            text-align: center;
+        }
+    }
+    div.image_card>div{
+        width: 100px;
+        border: 10px solid black;
+    }
+</style>
+<body>
+    <div class="cont">
+        <div class="image_card">
+            <a target="_blank"href="https://www.bing.com/search?q=canis">
+                <img src="../../00Assets/canis.jpg" alt="Canis Lupus">
+                <h3>Canis Lupus</h3>
+            </a>
+        </div>
+        <div class="image_card">
+            <a target="_blank"href="https://www.bing.com/search?q=feracabalus">
+                    <img src="../../00Assets/ferasCabalus.webp" alt="Fera Cabalus">
+                <h3>Equus Fera Cabulas</h3>
+            </a>
+        </div>
+        <div class="image_card">
+            <a target="_blank"href="https://www.bing.com/search?q=pantheratigiris">
+                <img src="../../00Assets/panthera.jpg" alt="Panthera Tigiris">
+                <h3>Panthera Tigiris</h3>
+            </a>
+        </div>
+        <div class="image_card">
+            <a target="_blank"href="https://www.bing.com/search?q=pavo">
+                <img src="../../00Assets/pavo.jpg" alt="Pavo">
+                <h3>Pavo</h3>
+            </a>
+        </div>
+        <div class="image_card">
+            <a target="_blank"href="https://www.bing.com/search?q=bear">
+                <img src="../../00Assets/kuma.jpg" alt="Kuma">
+                <h3>Kuma</h3>
+            </a>
+        </div>
+        <div class="image_card">
+            <a target="_blank"href="https://www.bing.com/search?q=canis">
+                <img src="../../00Assets/canis.jpg" alt="Canis Lupus">
+                <h3>Canis Lupus</h3>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

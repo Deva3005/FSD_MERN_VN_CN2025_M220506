@@ -1,0 +1,63 @@
+<!-- Question 10: Design a card component (300px × 400px) with an image at the top, a title, a 
+description, and a button at the bottom. Use appropriate backgrounds, borders, padding, 
+and margins. The card should have a subtle border and apply a different border style other 
+than solid. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Card</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .cont{
+            border:15px outset darkblue;
+            border-radius: 15px;
+            padding:20px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            transition: all 1s;
+        }
+        .cont:hover{
+            box-shadow: 10px 10px grey;
+        }
+        .cont>div>button{
+            justify-self: end;
+        }
+
+         button.custo{
+            border: none;
+            font-size: large;
+            font-weight: bolder;
+            background-color: dodgerblue;
+            color: white;
+            padding:20px;
+            border-radius: 20px;
+            transition: all 1ms;
+            box-sizing: border-box;
+        }
+        button.custo:hover{
+            background-color: blue;
+        }
+        button.custo:active{  
+            background-color: rgb(255, 98, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <img src="../../00Assets/wallpaper_16810958666d24eb966a797221021e63369d58acc2.jpeg" width="500px" alt="MSI">
+        <div class="c-section">
+            <h2>Digi-Dragon X</h2>
+            <p>This card is all about digi dragon X and thats all about it...</p>
+        </div>
+        <button class="custo">Join Us!!!</button>
+    </div>
+</body>
+</html>

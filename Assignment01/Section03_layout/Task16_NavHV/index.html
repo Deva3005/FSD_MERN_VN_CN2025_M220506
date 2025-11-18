@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav H V</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        ul>li>a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .hnav>ul{
+            background-color: greenyellow;
+            display: flex;
+            justify-content: center;
+        }
+        .vnav>ul{
+            background-color: steelblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding:20px;
+            margin: 20px;
+        }
+        li{
+            width: 100px;
+            padding: 20px;
+            border:2px solid snow;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+
+                border-bottom: 2px solid grey;
+            }
+            a:hover{
+                border-bottom: 2px solid red;
+            }
+        }
+        .hnav,.vnav{
+            border:5px solid black;
+            padding:20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hnav">
+        <ul>
+            <li><a href="#">h Link 1</a></li>
+            <li><a href="#">h Link 2</a></li>
+            <li><a href="#">h Link 3</a></li>
+            <li><a href="#">h Link 4</a></li>
+            <li><a href="#">h Link 5</a></li>
+        </ul>
+    </div>
+    
+    <div class="vnav">
+        <ul>
+            <li><a href="#">v Link 1</a></li>
+            <li><a href="#">v Link 2</a></li>
+            <li><a href="#">v Link 3</a></li>
+            <li><a href="#">v Link 4</a></li>
+            <li><a href="#">v Link 5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

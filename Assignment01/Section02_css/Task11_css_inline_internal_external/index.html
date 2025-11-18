@@ -1,0 +1,33 @@
+<!-- Question 11: Create a webpage with three different CSS styling methods: inline CSS for one 
+element, internal CSS for another section, and external CSS for the rest of the page. 
+Document which method you used where in comments.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS InLine, Internal, External</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internalcss{
+            color:"red";
+            border:10px ridge red;
+        }
+    </style>
+</head>
+<body>
+    <div class="inlinecss" style="color:'blue';border:10px ridge blue;">
+        Text from Inline CSS
+        <p>Priority 1</p>
+    </div>
+    <div class="internalcss">
+        Text from Internal CSS
+        <p>Priority 2</p>
+    </div>
+    <div class="externalcss">
+        Text from External CSS
+        <p>Priority 3</p>
+    </div>
+
+</body>
+</html>

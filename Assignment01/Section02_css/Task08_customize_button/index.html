@@ -1,0 +1,47 @@
+<!-- Question 8: Style a button with the following specifications: custom background color, white 
+text, padding, rounded corners and appropriate margins.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomizeButton</title>
+    <style>
+        body{
+            display: flex;
+            height: 60vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        button.custo{
+            border: none;
+            font-size: large;
+            font-weight: bolder;
+            background-color: dodgerblue;
+            color: white;
+            padding:20px;
+            border-radius: 20px;
+            transition: all 1ms;
+            box-sizing: border-box;
+        }
+        button.custo:hover{
+            background-color: blue;
+        }
+        button.custo:active{  
+            background-color: rgb(255, 98, 0);
+            /* border-radius: 50px; */
+            /* border: inset 32px solid blue; */
+        }
+    </style>
+</head>
+<body>
+    <button>
+        Click me normal
+    </button>
+    <button class="custo">
+        Click me customized
+    </button>
+</body>
+</html>

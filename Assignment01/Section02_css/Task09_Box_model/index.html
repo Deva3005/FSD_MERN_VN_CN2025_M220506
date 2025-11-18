@@ -1,0 +1,50 @@
+<!-- Question 9: Create three div boxes demonstrating the CSS Box Model. Each box should have 
+different margin, padding, and border values. Display the actual measurements by adding 
+text inside each box explaining its box model properties. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box{
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            width: 100px;
+            border: 10px solid dodgerblue ;
+        }
+        .cont1{
+            box-sizing: content-box;
+        }
+        .cont2{
+            box-sizing: border-box;
+        }
+        .cont3{
+            border-style: dashed;
+            border-radius: 0 20px 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Data :: 
+        width-100px|height-100px|padding-10px|margin-10px|border-10px
+    </h2>
+    <p>
+        Content-Box <br>
+        width=width+paddingY+marginY = 100+10+10+10+10=140
+    </p>
+    <p>
+        Border Box <br>
+        width=width-paddingY-marginY = 100-10-10-10-10=60
+    </p>
+    <h3>
+        CTRL + SHIFT + I :: To Inspect and Validate :: Thanks!!!
+    </h3>
+    <div class="box cont1">content-box</div>
+    <div class="box cont2">border-box</div>
+    <div class="box cont3">Diff border Style</div>
+</body>
+</html>

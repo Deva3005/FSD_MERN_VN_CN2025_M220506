@@ -1,0 +1,107 @@
+<!-- Question 3: Create a registration form with the following fields: Username, Email, Password, 
+Confirm Password, Date of Birth, Gender (radio buttons), Country (dropdown), Terms & 
+Conditions (checkbox), and a Submit button. Use appropriate input types and include 
+placeholder text.  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* *{
+            border: 1px solid blue;
+        } */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+            height: 80vh;
+        }
+        section{
+            border: 5px solid black;
+            background:linear-gradient(45deg,rgb(104, 92, 92) 1%,grey,white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px white;
+            width: 50%;
+        }
+        form{
+            width: 50%;
+            margin: 15px;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(164, 193, 193);
+            gap:12px;
+        }
+        form>div{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type=submit]{
+            border: none;
+            background-color: midnightblue;
+            color: white;
+            font-weight: bold;
+            padding:5px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section>
+    <h1>Registration Form !</h1>
+    <form action="">
+        <div><label for="uname">Username</label>
+        <input type="text" name="userName" id="uname" placeholder="Enter your name"></div>
+        <div><label for="email">Email</label>
+        <input type="email" name="userEmail" id="email" placeholder="Enter your email"></div>
+        <div><label for="pass1">Enter Password</label>
+        <input type="password" name="pass1" id="pass1"  placeholder="Enter the password"></div>
+        <div><label for="pass2">Confirm Password</label>
+        <input type="password" name="pass2" id="pass2"  placeholder="Re Enter the password"></div>
+        <div><label for="dob">Date Of Birth</label>
+        <input type="date" name="dob" id="dob"></div>
+        <div><label>Gender</label>
+            <div>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female">
+    </div>
+    </div>
+        <div>
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Japan">Japan</option>
+                <option value="Russia">Russia</option>
+            </select>
+    </div>
+    <div>
+        <div></div>
+        <div><input type="checkbox" name="tandc" id="tc">
+        <label for="tc">Terms and Conditions</label></div>
+    </div>
+    <input type="submit">
+    </form>
+    </section>
+</body>
+
+</html>

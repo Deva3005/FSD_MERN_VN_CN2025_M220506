@@ -1,0 +1,8 @@
+*{
+    margin:20px;
+    padding:20px;
+}
+.externalcss{
+    color:"green";
+    border:10px ridge green;
+}

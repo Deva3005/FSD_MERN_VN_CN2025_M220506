@@ -1,0 +1,73 @@
+<!-- Question 18: Design a dashboard layout using CSS Grid with the following sections: 
+• Header (spanning full width) 
+• Sidebar (left side, 1/4 width) 
+• Main content area (center, 2/4 width) 
+• Widget panel (right side, 1/4 width) 
+• Footer (spanning full width) 
+Use grid-template-columns/rows for the layout.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .cont{
+            height: 100vh;
+            display: grid;
+            background-color: azure;
+            gap: 10px;
+            grid-template-columns: 1fr 2fr 1fr 1fr;
+            grid-template-rows: 1fr 70vh 1fr;
+            /* grid-template-areas: 
+            "h h h h "
+            "s m m w"
+            "f f f f"; */
+        }
+        .header{
+            /* grid-area: h; */
+            grid-column-start: 1;
+            grid-column-end: -1;
+            grid-row: 1/2;
+        }
+        .sidebar{
+            /* grid-area: s; */
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row: 2/4;
+        }
+        .main{
+            /* grid-area: m; */
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row: 2/4;
+        }
+        .widget{
+            /* grid-area: w; */
+            color: black;
+        }
+        .footer{
+            color: black;
+            /* grid-area: f; */
+        }
+        /* .cont>div{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 208, 0);
+            border-radius: 25px;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="header">Header</div>
+        <div class="sidebar">Side bar</div>
+        <div class="main">Main Section</div>
+        <div class="widget">Widget</div>
+        <div class="footer">Footer</div>
+    </div>
+    
+</body>
+</html>

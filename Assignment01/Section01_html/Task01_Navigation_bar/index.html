@@ -1,0 +1,66 @@
+<!-- Question 1: Create an HTML page with a proper document structure that includes a 
+navigation menu with 5 links (Home, About, Services, Portfolio, Contact). Use semantic 
+HTML5 elements appropriately.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <style>
+        *{
+            /* border: 1px solid blue; */
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+        header{
+            display: flex;
+            height: 45px;;
+            width: 90%;
+            margin: auto;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+
+        }
+        nav{
+            width: 60%;
+        }
+        ul{
+            display: flex;
+            height: 45px;
+            /* flex-direction: column; */
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav>ul>li{
+            margin: 0 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="" alt="Image" width="100px">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
