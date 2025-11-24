@@ -13,61 +13,29 @@ Use grid-template-columns/rows for the layout.  -->
     <title>Grid</title>
     <style>
         .cont{
-            height: 100vh;
+            height: 90vh;
+            border:5px dotted steelblue;
             display: grid;
-            background-color: azure;
-            gap: 10px;
-            grid-template-columns: 1fr 2fr 1fr 1fr;
-            grid-template-rows: 1fr 70vh 1fr;
-            /* grid-template-areas: 
-            "h h h h "
-            "s m m w"
-            "f f f f"; */
+            grid-template-columns: repeat(4,fr);
+            grid-template-rows: 1fr 5fr 1fr;
+            grid-template-areas: 
+            "bx2 bx1 bx1 bx1"
+            "bx2 bx3 bx3 bx4"
+            "bx5 bx5 bx5 bx4";
+            gap: 20px;
         }
-        .header{
-            /* grid-area: h; */
-            grid-column-start: 1;
-            grid-column-end: -1;
-            grid-row: 1/2;
+        .box{
+            background-color: aqua;
         }
-        .sidebar{
-            /* grid-area: s; */
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row: 2/4;
-        }
-        .main{
-            /* grid-area: m; */
-            grid-column-start: 2;
-            grid-column-end: 4;
-            grid-row: 2/4;
-        }
-        .widget{
-            /* grid-area: w; */
-            color: black;
-        }
-        .footer{
-            color: black;
-            /* grid-area: f; */
-        }
-        /* .cont>div{
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(255, 208, 0);
-            border-radius: 25px;
-        } */
     </style>
 </head>
 <body>
-
     <div class="cont">
-        <div class="header">Header</div>
-        <div class="sidebar">Side bar</div>
-        <div class="main">Main Section</div>
-        <div class="widget">Widget</div>
-        <div class="footer">Footer</div>
+        <div class="header box" style="grid-area: bx1;" >Header</div>
+        <div class="side box" style="grid-area: bx2;">Sidebar</div>
+        <div class="main box" style="grid-area: bx3;">Main Block</div>
+        <div class="widg box" style="grid-area: bx4;">Widget</div>
+        <div class="footer box" style="grid-area: bx5;">footer</div>
     </div>
-    
 </body>
 </html>

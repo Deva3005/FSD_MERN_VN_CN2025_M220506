@@ -1,0 +1,74 @@
+FSD_MERN_VN – ASSIGNMENT 2 
+
+1. Write a program that takes a number and prints whether it is even/odd, 
+positive/negative/zero, and whether it is divisible by both 3 and 5. 
+
+2. Write a program that takes marks (0–100) and prints the grade 
+(A/B/C/F). Also take an age input and use a ternary operator to print 
+“Adult” or “Minor”. 
+
+3. Create a variable name and: 
+o Print "Hello, [name]! Welcome to JavaScript." 
+o Convert the name to uppercase 
+o Check if the message has more than 10 characters 
+o Check if it contains the word "JavaScript" 
+
+4. Create a fruits array with 5 items. Perform: push(), pop(), shift(), and 
+unshift() and print the final array. 
+
+5. Create an array of 5 numbers and print: 
+o The sum 
+o The largest number 
+
+6. A theatre booking system has:  totalSeats = 120 and bookedSeats = 
+78. Write a program to Calculate available seats, Check if the show is 
+“Almost Full” if seats < 20, “Moderate Availability” if seats between 20
+60, “Plenty of Seats Available” if seats > 60. Print both the exact number 
+of seats left and the status message. 
+ 
+7. Write a loop that prints levels from Level 1 to Level 10, then prints 
+“Game Ready!”. 
+
+8. Write a function welcomeUser(name) that prints "Welcome, [name]!" and 
+call it three times. 
+
+9. Two delivery persons earn ₹300 and ₹500. 
+Use a ternary operator to print who earns more and by how much. 
+
+FSD_MERN_VN – ASSIGNMENT 2 
+
+10. Write a program that prints whether a given bus number goes to Route A 
+(even) or Route B (odd). 
+
+11. Create a switch-case program: 
+1 → “Data Pack”, 2 → “Talktime”, 3 → “Validity Recharge”, anything 
+else → “Invalid Choice”. 
+
+12. Given the message " Great Service! ", remove extra spaces and print the 
+cleaned version. 
+
+13. Given sales [2500, 4000, 1800, 3200, 5000], print using for loop: 
+Day 1: ₹2500 
+Day 2: ₹4000 
+...
+
+14. Using array destructuring on ["Instagram", "YouTube", "LinkedIn"], print 
+the first two app names. 
+
+15. Given monthly expenses [2000, 1500, 3500, 4000], write a function to 
+calculate and print the total money spent. 
+
+16.  Create three functions placeOrder(callback), cookFood(callback), and 
+deliverFood() using setTimeout to simulate delays. Use callbacks so the 
+messages print in order: Order placed → Food cooking → Food 
+delivered. 
+
+17. Write a function downloadFile(filename, callback) that prints 
+"Downloading [filename]..." after 2 seconds, then uses a callback to print 
+"Download complete!". 
+
+18. Create functions startExam(callback), evaluateExam(callback), and 
+declareResult() using callbacks so the output appears in sequence with 
+delays: 
+Exam started → Evaluating answers → Result declared. 
+ 

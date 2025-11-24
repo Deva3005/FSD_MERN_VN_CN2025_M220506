@@ -1,1 +1,19 @@
-IN PROGRESS !
+IN PROGRESS !!!
+
+Boot Strap Frontend CSS Framework
+Mobile First Responsive destructuring
+
+Add Link and Script in html
+
+Key
+    1. CSS Styles are Enabled via class
+    2. Whole Screen is splits to 12 Section [12 cols]
+
+Basic Building Block
+    Container
+
+Responsiveness
+    1. large Screen  [lg]
+    2. Medium Screen [md]
+    3. Small Screen  [sm] 
+    etc...,

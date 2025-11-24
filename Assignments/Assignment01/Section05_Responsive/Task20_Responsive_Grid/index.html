@@ -1,0 +1,124 @@
+<!-- Question 20: Build a responsive card grid that displays: 
+• 4 cards per row on large screens (>1200px) 
+• 3 cards per row on medium screens (768px-1200px) 
+• 2 cards per row on small screens (480px-768px) 
+• 1 card per row on mobile (<480px) 
+Use either Flexbox or Grid, and implement with media queries.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive card Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid-cont{
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+        }
+        .box{
+            background-color: grey;
+            border: 2px solid rgb(42, 55, 155);
+            padding: 5px;
+            display: grid;
+            place-items: center;
+        }
+        @media (min-width:1200px) {
+            .grid-cont{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-areas: 
+                "bx1 bx2 bx3 bx4"
+                "bx5 bx6 bx7 bx8"
+                "bx9 bx10 bx11 bx12"
+                ;
+            }
+        }
+        @media (min-width:768px) and (max-width:1200px) {
+            .grid-cont{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "bx1 bx2 bx3"
+                "bx4 bx5 bx6"
+                "bx7 bx8 bx9"
+                "bx10 bx11 bx12"
+                ;
+            }
+        }
+        @media (min-width:480px) and (max-width:768px) {
+            .grid-cont{
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 
+                "bx1 bx2"
+                "bx3 bx4"
+                "bx5 bx6"
+                "bx7 bx8"
+                "bx9 bx10"
+                "bx11 bx12"
+                ;
+            }
+        }
+        @media (max-width:480px) {
+            .grid-cont{
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-cont">
+        <div class="box box1" style="grid-area:bx1">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 1</h3>
+        </div>
+        <div class="box box2" style="grid-area:bx2">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 2</h3>
+        </div>
+        <div class="box box3" style="grid-area:bx3">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 3</h3>
+        </div>
+        <div class="box box4" style="grid-area:bx4">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 4</h3>
+        </div>
+        <div class="box box5" style="grid-area:bx5">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 5</h3>
+        </div>
+        <div class="box box6" style="grid-area:bx6">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 6</h3>
+        </div>
+        <div class="box box7" style="grid-area:bx7">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 7</h3>
+        </div>
+        <div class="box box8" style="grid-area:bx8">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 8</h3>
+        </div>
+        <div class="box box9" style="grid-area:bx9">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 9</h3>
+        </div>
+        <div class="box box10" style="grid-area:bx10">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 10</h3>
+        </div>
+        <div class="box box11" style="grid-area:bx11">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 11</h3>
+        </div>
+        <div class="box box12" style="grid-area:bx12">
+            <img src="../../00Assets/panthera.jpg" width="300px">
+            <h3>card 12</h3>
+        </div>
+    </div>
+</body>
+</html>

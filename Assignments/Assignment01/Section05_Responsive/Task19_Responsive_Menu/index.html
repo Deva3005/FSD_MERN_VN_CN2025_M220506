@@ -1,0 +1,85 @@
+<!-- Question 19: Create a responsive navigation menu that: 
+• Displays horizontally on desktop (screens wider than 768px) 
+• Converts to a vertical stacked menu on mobile (screens 768px or smaller) 
+• Changes the background color at the medium breakpoint (768px-1024px) 
+Use media queries to achieve this. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive menu</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            text-decoration: none;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            height: 70px;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        header>div{
+            margin: 0 20px ;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                padding: 10px;
+                height: 100%;
+                width: 100%;
+                font-size: x-large;
+                border-radius: 5px;
+                /* display: inline-block; */
+                a{
+                    color: inherit;
+                }
+            }
+            li:hover{
+                color:white;
+                background-color: black;
+            }
+        }
+        @media (max-width:768px){
+            header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: yellow;
+            height: 150px;
+                color:black;
+                font-weight: bolder;
+                align-items: center;
+        }
+        }
+        @media (min-width:768px){
+            header{
+                background-color: skyblue;
+                color:white;
+                font-weight: bolder;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><h1>Logo</h1></div>
+        <div>
+            <ul>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+                <li><a href="#">Link5</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
