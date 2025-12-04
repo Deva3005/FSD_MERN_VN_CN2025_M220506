@@ -1,0 +1,23 @@
+.cardI{
+    width: 200px;
+    text-align: center;
+    border: 10px solid rgba(0, 0, 0, 0.118);
+    border-radius: 15px;
+    padding:10px;
+    background-color: #8080804a;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    img{
+        margin-top: 5px;
+        width: 50%;
+    }
+    h3{
+        color: blue;
+        text-shadow: 0px 0px 5px white;
+    }
+}
+.cardI:hover{
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 255, 0.477);
+}

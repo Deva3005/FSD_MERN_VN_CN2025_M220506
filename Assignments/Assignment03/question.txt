@@ -1,74 +1,33 @@
-FSD_MERN_VN – ASSIGNMENT 2 
-
-1. Write a program that takes a number and prints whether it is even/odd, 
-positive/negative/zero, and whether it is divisible by both 3 and 5. 
-
-2. Write a program that takes marks (0–100) and prints the grade 
-(A/B/C/F). Also take an age input and use a ternary operator to print 
-“Adult” or “Minor”. 
-
-3. Create a variable name and: 
-o Print "Hello, [name]! Welcome to JavaScript." 
-o Convert the name to uppercase 
-o Check if the message has more than 10 characters 
-o Check if it contains the word "JavaScript" 
-
-4. Create a fruits array with 5 items. Perform: push(), pop(), shift(), and 
-unshift() and print the final array. 
-
-5. Create an array of 5 numbers and print: 
-o The sum 
-o The largest number 
-
-6. A theatre booking system has:  totalSeats = 120 and bookedSeats = 
-78. Write a program to Calculate available seats, Check if the show is 
-“Almost Full” if seats < 20, “Moderate Availability” if seats between 20
-60, “Plenty of Seats Available” if seats > 60. Print both the exact number 
-of seats left and the status message. 
- 
-7. Write a loop that prints levels from Level 1 to Level 10, then prints 
-“Game Ready!”. 
-
-8. Write a function welcomeUser(name) that prints "Welcome, [name]!" and 
-call it three times. 
-
-9. Two delivery persons earn ₹300 and ₹500. 
-Use a ternary operator to print who earns more and by how much. 
-
-FSD_MERN_VN – ASSIGNMENT 2 
-
-10. Write a program that prints whether a given bus number goes to Route A 
-(even) or Route B (odd). 
-
-11. Create a switch-case program: 
-1 → “Data Pack”, 2 → “Talktime”, 3 → “Validity Recharge”, anything 
-else → “Invalid Choice”. 
-
-12. Given the message " Great Service! ", remove extra spaces and print the 
-cleaned version. 
-
-13. Given sales [2500, 4000, 1800, 3200, 5000], print using for loop: 
-Day 1: ₹2500 
-Day 2: ₹4000 
-...
-
-14. Using array destructuring on ["Instagram", "YouTube", "LinkedIn"], print 
-the first two app names. 
-
-15. Given monthly expenses [2000, 1500, 3500, 4000], write a function to 
-calculate and print the total money spent. 
-
-16.  Create three functions placeOrder(callback), cookFood(callback), and 
-deliverFood() using setTimeout to simulate delays. Use callbacks so the 
-messages print in order: Order placed → Food cooking → Food 
-delivered. 
-
-17. Write a function downloadFile(filename, callback) that prints 
-"Downloading [filename]..." after 2 seconds, then uses a callback to print 
-"Download complete!". 
-
-18. Create functions startExam(callback), evaluateExam(callback), and 
-declareResult() using callbacks so the output appears in sequence with 
-delays: 
-Exam started → Evaluating answers → Result declared. 
- 
+1. Create an array of student objects (`name`, `dept`, `year`). Display them using `.map()` 
+inside cards. 
+2. Show “Welcome back!” if a variable `isLoggedIn` is true, else show “Please log in”. 
+3. Create a `<ProfileCard>` component that takes props: `name`, `role`, and `image`. Use it 
+three times with different data. 
+4. Creatassiinput field for “Username.” When the user types, display the entered name live 
+below it. 
+5. Create a small form with “Name” and “Email” fields. On submit, display both values 
+below without refreshing the page. 
+6. Display an array of product objects (id, name, price) in a `<table>` using `.map()`. 
+7. Create a parent component with a function `showAlert()`. Pass it as a prop to a child and 
+call it on button click. 
+8. Given a list of products (name, category), add buttons like “All”, “Electronics”, “Clothes” 
+to filter and display accordingly. 
+9. Create a search bar that filters and displays matching student names from an array as you 
+type. 
+10. Import a local `data.json` file (list of products) and display them as cards using `.map()`. 
+11. Fetch data from `https://dummyjson.com/products` and display product name, price, and 
+brand. 
+12.Show “Loading…” while fetching, and if the request fails, show “Error loading data”. 
+13. Start with an array of fruits in state. Add a form to insert new fruits dynamically into the 
+list. 
+14. Extend the previous question — add a delete button to remove an item from the list. 
+15. Create a profile object in state (`name`, `email`, `phone`). Add inputs to edit and update 
+each field. 
+16. Create a form (title, body) and send data to `https://dummyjson.com/posts/add` using 
+Axios POST. Display “Post Added!” message on success. 
+17. Fetch one user from `https://dummyjson.com/users/1`, display details in inputs, edit and 
+update using PUT. 
+18. Fetch 20 users from an API and show only 5 at a time with “Next” and “Prev” buttons. 
+19. Build a 3-page app — Home, About, Products — and link them using `react-router-dom`. 
+20. Add a “Products” page with nested routes: `/products/electronics` and `/products/fashion`. 
+Display relevant text for each.

@@ -1,0 +1,17 @@
+table.students{
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 500px;
+    text-align: center;
+    border: 2px solid blue;
+    border-collapse: collapse;
+    tr:nth-child(1){
+        background-color: blue;
+        font-weight: bold;
+        color: white;
+        font-size: 24px;
+    }
+    tr{
+        padding:10px;
+        border: 2px solid blue;
+    }
+}
