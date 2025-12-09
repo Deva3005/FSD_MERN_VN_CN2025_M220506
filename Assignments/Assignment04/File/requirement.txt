@@ -1,0 +1,124 @@
+FSD_MERN_VN – ASSIGNMENT 4 
+
+Build a Complete College Info Portal Website (Frontend Only) 
+
+Objective 
+Build a fully functional, responsive College Information Website using React.js. 
+Only frontend — no backend. 
+
+Your website must have five pages, dynamic routing, reusable components, and must load 
+department data from a local JSON file. 
+ 
+PROJECT REQUIREMENTS 
+Pages to Build 
+1. Home Page 
+Must include: 
+• Hero section with banner + tagline 
+• “Why this college?” section 
+• Cards showing top departments 
+• Button links to other pages 
+ 
+2. About Page 
+Include: 
+• College history 
+• Mission & Vision 
+• Achievements (timeline or cards) 
+ 
+3. Departments Page 
+Show all departments using cards: 
+• CSE 
+• IT 
+• ECE 
+• Mechanical 
+• Civil 
+• MBA 
+FSD_MERN_VN – ASSIGNMENT 4 
+Each department card must show: 
+• Name 
+• Description (2–3 lines) 
+• “View More” button 
+ 
+4. Department Details Page (Dynamic Routing) 
+When clicking a department card, open: 
+/departments/cse 
+/departments/mech 
+/departments/it 
+Page must show: 
+• Full description 
+• List of courses offered 
+• Faculty list 
+• Labs / facilities 
+This page must use: 
+• dynamic route params 
+• data loaded from local JSON 
+ 
+5. Contact Page 
+Create a working form with: 
+• Name 
+• Email 
+• Department (dropdown) 
+• Message 
+On form submit: 
+• Show the submitted details on the same page 
+• No backend required 
+ 
+FSD_MERN_VN – ASSIGNMENT 4 
+Mandatory React Concepts that should be used 
+1. React Router 
+• Pages 
+• Dynamic Routes 
+• Navigation bar with active route highlight 
+2. Components 
+Reusable components such as: 
+• <Header /> 
+• <Footer /> 
+• <DepartmentCard /> 
+3. Props 
+Pass data to components (e.g., department info to cards). 
+4. State Management 
+Use useState where required: 
+• For form handling 
+• For storing selected department data 
+5.  useEffect 
+Use useEffect to load department data from a local JSON file. 
+ 
+Data Requirement (Local JSON) 
+Create a file: 
+/src/data/departments.json 
+Example structure: 
+[ 
+  { 
+    "id": "cse", 
+    "name": "Computer Science Engineering", 
+    "description": "The CSE department focuses on software, algorithms, and computing.", 
+    "courses": ["DSA", "OS", "DBMS"], 
+FSD_MERN_VN – ASSIGNMENT 4 
+    "faculty": ["Dr. Kumar", "Dr. Meena"], 
+    "labs": ["Programming Lab", "Networks Lab"] 
+  } 
+] 
+Load this JSON inside the Departments & Department Detail pages. 
+ 
+UI Requirements 
+• Responsive design (mobile-friendly) 
+• Clean layout using your preferred method: 
+o CSS Modules OR 
+o Bootstrap CSS OR 
+o Styled components 
+• Consistent color theme 
+• Good spacing and typography 
+• Header and Footer on every page 
+ 
+Navigation Requirements 
+Navbar must include: 
+• Home 
+• About 
+• Departments 
+• Contact 
+Active link should be highlighted. 
+ 
+Functional Requirements 
+• Clicking a department card must redirect to the respective detail page 
+• Department detail page must display actual data from JSON 
+• Contact form must show submitted data below it 
+• No page should refresh during navigation 
